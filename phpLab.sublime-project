@@ -1,0 +1,22 @@
+{
+	"folders":
+	[
+		{
+			"path": "c:\\inetpub\\wwwroot\\phpLab"
+		},
+		{
+			"path": "C:\\Users\\Java\\Documents"
+		},
+		{
+			"path": "C:\\Users\\Java\\Desktop\\我愛曲翑"
+		}
+	],
+	"settings":
+	{
+		"sublime-view-in-browser":
+		{
+			"basePath": "/phpLab",
+			"baseUrl": "http://localhost/phpLab"
+		}
+	}
+}

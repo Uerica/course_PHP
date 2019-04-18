@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="arrayForm.php">
+        帳號<input type="text" name="memId" /><br />
+        英文能力<input type="checkBox" name="ability[]" value="read">讀
+              <input type="checkBox" name="ability[]" value="listen">聽
+              <input type="checkBox" name="ability[]" value="write">寫<p>
+        專長<br />
+           <select name="specialty[]" size="3" multiple >
+            
+               <option value="VB.NET">VB.NET</option>
+               <option value="SQL">SQL Server </option>
+               <option value="JAVA">JAVA </option>
+               <option value="Delphi">Delphi </option>
+            </select>     
+        <input type="submit" value="送出" />
+        </form>
+            
+</body>
+</html>

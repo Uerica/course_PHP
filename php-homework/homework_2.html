@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style type="text/css">
+	
+td{
+	border: 1px #ccc solid;
+	width: 100px;
+}
+
+</style>
+
+</head>
+<body>
+
+	
+	<form method="get" action="homework_2.php">
+		<table>
+			<tr>
+				<td>姓名</td>
+				<td><input type="text" name="memName"></td>
+			</tr>
+			
+			<tr>
+				<td>帳號</td>
+				<td><input type="text" name="memId"></td>
+			</tr>
+			
+			<tr>
+				<td>密碼</td>
+				<td><input type="password" name="memPsw"></td>
+			</tr>
+
+			<tr>
+				<td>email</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+
+			<tr>
+				<td>性別</td>
+				<td><input type="radio" name="sex" value="M">男
+				 <input type="radio" name="sex" value="W">女
+			</tr>
+			<tr>
+				<td>生日</td>
+				<td><input type="date" name="birthday"></td>
+			</tr>
+			<tr>
+				<td>電話</td>
+				<td><input type="tel" name="tel"></td>
+			</tr>
+		</table>
+		<input type="submit" value="新增">
+</form>
+	
+</body>
+</html>

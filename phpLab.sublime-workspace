@@ -1,0 +1,380 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"glo",
+				"global〔keyword〕"
+			],
+			[
+				"glob",
+				"glob〔function〕"
+			],
+			[
+				"gl",
+				"glob"
+			],
+			[
+				"a",
+				"amount"
+			],
+			[
+				"pri",
+				"print_r〔function〕"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"strp",
+				"strpos〔function〕"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"ra",
+				"rand"
+			],
+			[
+				"9",
+				"9forSum.php"
+			],
+			[
+				"05",
+				"05orangeIf.php"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"fr",
+				"form\tTag"
+			],
+			[
+				"homewor",
+				"homework_2.php"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"php",
+				"php"
+			],
+			[
+				"text",
+				"textarea\tTag"
+			],
+			[
+				"ma",
+				"maxlength\tAttr"
+			],
+			[
+				"_",
+				"$_GET〔variable〕"
+			],
+			[
+				"lo",
+				"login.php"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"background-",
+				"background-color\tproperty"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"print",
+				"printf"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/c/inetpub/wwwroot/phpLab"
+	],
+	"file_history":
+	[
+		"/C/inetpub/wwwroot/phpLab/408.html",
+		"/C/Users/Java/Desktop/408.js",
+		"/C/inetpub/wwwroot/phpLab/408.php",
+		"/C/php-7.3.2-nts-Win32-VC15-x64/php.ini",
+		"/c/inetpub/wwwroot/phpLab/403.php",
+		"/C/inetpub/wwwroot/phpLab/403.php",
+		"/c/inetpub/wwwroot/phpLab/17nestedForStar.php",
+		"/c/inetpub/wwwroot/phpLab/arrayForm.php",
+		"/C/Users/Java/AppData/Local/Temp/BNZ.5ca40f6165541d5f/arrayForm_C.html",
+		"/c/inetpub/wwwroot/phpLab/408.php",
+		"/C/Users/Java/Desktop/arrayForm.php",
+		"/C/Users/Java/Desktop/arrayForm.html",
+		"/c/inetpub/wwwroot/phpLab/13tax.php",
+		"/C/inetpub/wwwroot/phpLab/15nestedForStar.php",
+		"/C/inetpub/wwwroot/phpLab/16nestedForStar.php",
+		"/c/inetpub/wwwroot/phpLab/15nestedForStar.php",
+		"/C/inetpub/wwwroot/phpLab/14nestedLoopStar.php",
+		"/c/inetpub/wwwroot/phpLab/402.php",
+		"/c/inetpub/wwwroot/phpLab/14nestedLoopStar.php",
+		"/c/inetpub/wwwroot/phpLab/16nestedForStar.php",
+		"/C/Users/Java/Desktop/web1.psd",
+		"/C/inetpub/wwwroot/phpLab/17nestedForStar.php",
+		"/C/Users/Java/Desktop/Amos上課示範.zip",
+		"/C/inetpub/wwwroot/phpLab/402.php",
+		"/C/inetpub/wwwroot/phpLab/test.php",
+		"/c/inetpub/wwwroot/phpLab/11prizeFor.php",
+		"/C/inetpub/wwwroot/phpLab/13tax.php",
+		"/c/inetpub/wwwroot/phpLab/13tax.html",
+		"/C/inetpub/wwwroot/phpLab/11prizeFor.php",
+		"/c/inetpub/wwwroot/phpLab/12prize.php",
+		"/C/inetpub/wwwroot/phpLab/12prize.php",
+		"/c/inetpub/wwwroot/phpLab/05orangeIf.html",
+		"/C/inetpub/wwwroot/phpLab/329.php",
+		"/c/inetpub/wwwroot/phpLab/05orangeIf.php",
+		"/c/inetpub/wwwroot/phpLab/10forTable.php",
+		"/c/inetpub/wwwroot/phpLab/326.php",
+		"/c/inetpub/wwwroot/phpLab/329.php",
+		"/C/inetpub/wwwroot/phpLab/13tax.html",
+		"/C/inetpub/wwwroot/phpLab/05-10作業/05orangeIf.php",
+		"/C/inetpub/wwwroot/phpLab/10forTable.php",
+		"/c/inetpub/wwwroot/phpLab/intex.php",
+		"/C/inetpub/wwwroot/phpLab/326.php",
+		"/C/inetpub/wwwroot/phpLab/homework_2.html",
+		"/C/inetpub/wwwroot/phpLab/homework_2.php",
+		"/c/inetpub/wwwroot/phpLab/homework_2.html",
+		"/c/inetpub/wwwroot/phpLab/03memberShow.php",
+		"/C/inetpub/wwwroot/phpLab/03member.html",
+		"/c/inetpub/wwwroot/phpLab/homework_2.php",
+		"/C/inetpub/wwwroot/phpLab/9forSum.php",
+		"/c/inetpub/wwwroot/phpLab/03member.html",
+		"/C/inetpub/wwwroot/phpLab/05orangeIf.html",
+		"/C/inetpub/wwwroot/phpLab/05orangeIf.php",
+		"/C/inetpub/wwwroot/phpLab/04expression.html",
+		"/c/inetpub/wwwroot/phpLab/04expression.html",
+		"/c/inetpub/wwwroot/phpLab/06orangeIf.html",
+		"/c/inetpub/wwwroot/phpLab/06orangeIf.php",
+		"/C/inetpub/wwwroot/phpLab/07orangeIf.html",
+		"/C/inetpub/wwwroot/phpLab/07orangeIf.php",
+		"/C/inetpub/wwwroot/phpLab/9forSum.html",
+		"/c/inetpub/wwwroot/phpLab/07orangeIf.html",
+		"/c/inetpub/wwwroot/phpLab/08orangeSwitch.html",
+		"/c/inetpub/wwwroot/phpLab/08orangeSwitch.php",
+		"/c/inetpub/wwwroot/phpLab/9forSum.php",
+		"/c/inetpub/wwwroot/phpLab/login.html",
+		"/C/inetpub/wwwroot/phpLab/03memberShow.php",
+		"/c/inetpub/wwwroot/phpLab/04expression.php",
+		"/C/inetpub/wwwroot/phpLab/04expression.php",
+		"/C/inetpub/wwwroot/phpLab/06orangeIf.html",
+		"/C/inetpub/wwwroot/phpLab/06orangeIf.php",
+		"/C/inetpub/wwwroot/phpLab/08orangeSwitch.php",
+		"/C/inetpub/wwwroot/phpLab/08orangeSwitch.html",
+		"/c/inetpub/wwwroot/phpLab/07orangeIf.php",
+		"/c/inetpub/wwwroot/phpLab/9forSum.html",
+		"/C/inetpub/wwwroot/phpLab/phpLab.sublime-project",
+		"/c/inetpub/wwwroot/phpLab/login.php",
+		"/C/inetpub/wwwroot/phpLab/homework.php",
+		"/C/inetpub/wwwroot/phpLab/login.php",
+		"/C/inetpub/wwwroot/phpLab/login.html",
+		"/c/inetpub/wwwroot/phpLab/server.php",
+		"/C/inetpub/wwwroot/phpLab/server.php",
+		"/c/inetpub/wwwroot/phpLab/function_buildin.php",
+		"/C/inetpub/wwwroot/teacher/variable.php",
+		"/C/Sublime Text Build 3176 x64/Data/Settings/SideBarEnhancements.json",
+		"/C/inetpub/wwwroot/php.Lab/intex.html",
+		"/D/DD101檔案02/123.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mbstring",
+			"extension mbstring",
+			"extension",
+			">\";\n",
+			" date.timezon",
+			"date.timezone"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "phpLab.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
