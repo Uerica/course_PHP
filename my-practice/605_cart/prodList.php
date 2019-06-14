@@ -1,7 +1,7 @@
 <?php
 $errMsg = "";
 try {
-	require_once("connectBooks.php");
+	require_once("connectBooks.php");//
 
 	$sql = "select * from products";
 	$products = $pdo->query($sql); 
@@ -18,7 +18,7 @@ try {
 <title>Examples</title>
 <style type="text/css">
 h2 {
-	color:deeppink;
+	color:pink;
 }	
 td {
 	border-bottom:1px dotted deeppink;
@@ -32,8 +32,10 @@ a:hover{
 </style>
 </head>
 <body>
+	<div style="background-color:pink;text-align:right"><a href="cartShow.php">購物車</a></div><br>
+
 <table align="center">
-	<tr bgcolor="#bfbfef"><th>書號</th><th>書名</th><th>價格</th><th>作者</th><th>購物</th></tr>
+	<tr bgcolor="pink"><th>書號</th><th>書名</th><th>價格</th><th>作者</th><th>購物</th></tr>
 <?php	
 	while($prodRow = $products->fetch(PDO::FETCH_ASSOC)){
 ?>		
@@ -56,6 +58,6 @@ a:hover{
 <?php
 	}
 ?>
-</table>     
+</table>    
 </body>
 </html>
