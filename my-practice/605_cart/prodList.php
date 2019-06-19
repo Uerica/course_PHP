@@ -1,7 +1,7 @@
 <?php
 $errMsg = "";
 try {
-	require_once("connectBooks.php");//
+	require_once("connectBooks.php");
 
 	$sql = "select * from products";
 	$products = $pdo->query($sql); 
@@ -18,7 +18,7 @@ try {
 <title>Examples</title>
 <style type="text/css">
 h2 {
-	color:pink;
+	color:deeppink;
 }	
 td {
 	border-bottom:1px dotted deeppink;
@@ -32,10 +32,10 @@ a:hover{
 </style>
 </head>
 <body>
-	<div style="background-color:pink;text-align:right"><a href="cartShow.php">購物車</a></div><br>
+<div style="background-color:#bfbfef;text-align:right"><a href="cartShow.php">檢視購物車</a></div><br>
 
 <table align="center">
-	<tr bgcolor="pink"><th>書號</th><th>書名</th><th>價格</th><th>作者</th><th>購物</th></tr>
+	<tr bgcolor="#bfbfef"><th>書號</th><th>書名</th><th>價格</th><th>作者</th><th>圖片</th><th>購物</th></tr>
 <?php	
 	while($prodRow = $products->fetch(PDO::FETCH_ASSOC)){
 ?>		
@@ -52,12 +52,13 @@ a:hover{
 			</td>
 			<td><?php echo $prodRow["price"];?></td>
 			<td><?php echo $prodRow["author"];?></td>
+			<td><img src="images//<?php echo $prodRow["image"];?>" width="50"></td>
 			<td><input type="submit" value="放入購物車"></td>
 		</tr>
 	</form>	
 <?php
 	}
 ?>
-</table>    
+</table>     
 </body>
 </html>

@@ -25,18 +25,16 @@ a:hover{
 </head>
 <body>
 <table align="center" width="700">
-	<tr bgcolor="pink"><th>書號</th><th>書名</th><th>價格</th><th>數量</th><th>小計</th><th>異動</th></tr>
+	<tr bgcolor="#bfbfef"><th>書號</th><th>書名</th><th>價格</th><th>數量</th><th>小計</th><th>異動</th></tr>
 <?php 
-if( isset($_SESSION["pname"]) === false || count($_SESSION["pname"])==0){
 
-  echo "<tr><td colspan='15' align='center'>尚無購物資料</td></tr>";
-
-}else{ 
-
+if( isset($_SESSION["pname"]) === false || count($_SESSION["pname"])==0){ //尚無購物資料或購物車中的商品被刪光了
+  echo "<tr><td colspan='5' align='center'>尚無購物資料</td></tr>";
+}else{  //有購物資料
 	$total = 0;
-	foreach( $_SESSION["pname"] as $psn => $data){
-		$subTotal = $_SESSION["price"][$psn] * $_SESSION["qty"][$psn];
-		$total = $total + $subTotal;
+	foreach( $_SESSION["pname"] as $psn => $data){ 
+		$subTotal = $_SESSION["price"][$psn] * $_SESSION["qty"][$psn];  //計算小計
+		$total = $total + $subTotal;  //計算總計
 	 ?>	
 	 <form action="cartUpdate.php">
 	 	<input type="hidden" name="psn" value="<?php echo $psn;?>">
@@ -52,19 +50,14 @@ if( isset($_SESSION["pname"]) === false || count($_SESSION["pname"])==0){
 				<td><?php echo $subTotal?></td>
 				<td>
 					<input type="submit" name="btnUpdate" value="修改">
-					<input type="submit" name="btnDelete" value="刪除">
+					 <input type="submit" name="btnDelete" value="刪除">
 				</td>
 			</tr>
 	</form>		
 	<?php 
-	}
-
-	echo "<tr>
-	<td colspan='6' align='center'>總計:
-	",number_format($total),"
-	</td>
-</tr>";
-}
+	} //foreach
+	echo "<tr><td colspan='6' align='center'>總計 : ", number_format($total), "</td></tr>"; 
+}//if
 
 ?>
 
