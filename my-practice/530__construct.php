@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>PHP Class</title>
 </head>
 <body>
 
 	<?php
-class Person{
-	public $name;
-	private $birthday;
+	//class 類別
 
-	public function __construct($name="Somebody", $birthday=""){
-		$this->name = $name;
-		$this->birthday = $birthday;
-	}
+	class Person{
 
-	public function __destruct(){
-		echo "bye~~<br>";
-	}
+		public $name;
+		private $birthday;
 
-	public function smile(){
-		echo $this->name," smile~~<br>";
-	}
-} 
+		public function __construct($name="Somebody", $birthday=""){
+			$this->name = $name;
+			$this->birthday = $birthday;
+		}
 
+		public function __destruct(){
+			echo "bye~~<br>";
+		}
 
-$p1 = new Person("Adam", "1980-08-08");
-$p1->smile();
+		public function smile(){
+			echo $this->name," smile~~<br>";
+		}
+	} 
 
-$p2 = new Person();
-$p2->smile();
-?>
+	$p1 = new Person("Adam", "1980-08-08");
+	$p1->smile();
+
+	$p2 = new Person();
+	$p2->smile();
+
+	?>
 	
 </body>
 </html>

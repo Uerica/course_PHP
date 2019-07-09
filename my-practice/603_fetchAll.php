@@ -19,7 +19,7 @@
 <head>
 <meta charset="utf-8">
 <title>Examples</title>
-<style type="text/css">
+<style>
 h2 {
 	color:deeppink;
 }	

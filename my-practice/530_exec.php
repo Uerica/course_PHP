@@ -8,7 +8,6 @@
 	<?php 
 
 	try{
-
 		$dns = "mysql:host=localhost;port=3306;dbname=dd101;charset=utf8";
 		$user = "RouRouyo";
 		$password = "19820623";
