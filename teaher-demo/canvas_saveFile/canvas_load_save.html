@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Canvas_load_and_save</title>
+<style>
+#myCanvas { border:1px dotted deeppink}
+
+</style>
+
+</head>
+
+<body>
+<form method="post" accept-charset="utf-8" id="form1">
+  <input name="hidden_data" id='hidden_data' type="hidden"/>
+  心情:<input type="text" id="myWord" />
+  <input type="button" value="put text" onclick="putText()" />
+</form>
+
+<p>
+點選圖片： <br>
+<img id="srcImg" src="images/twitter-fly-128.png" width="128" onclick="loadImage()"/>
+<img id="srcImg22" src="images/block.png" width="128" onclick="loadImage22()"/>
+<p>
+<input type="button" value="save image" onclick="saveImage()" />
+
+<p>
+<canvas id="myCanvas" width="300" height="300"></canvas>
+
+
+<script>
+function putText(){
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  
+  var text = document.getElementById("myWord").value;
+  ctx.font="30px Arial";
+  ctx.fillStyle = "deepPink";
+  ctx.fillText(text,20,100);
+
+}
+
+function loadImage(){
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d"); 
+  var img = new Image();
+  img.onload = function(){
+    //ctx.translate(50, 50);
+    //ctx.rotate(0.5); 
+    ctx.drawImage(img,20,20,100,100); //drawImage(img,x,y,width,height)
+  }
+  img.src = document.getElementById("srcImg").src;
+ 
+}
+
+function loadImage22(){
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d"); 
+  var img = new Image();
+  img.onload = function(){
+    ctx.translate(50, 50);
+    ctx.rotate(0.5); 
+    ctx.drawImage(img,20,20);  
+  }
+  img.src = document.getElementById("srcImg22").src;
+}
+
+function saveImage() {
+  var canvas = document.getElementById("myCanvas");
+  var dataURL = canvas.toDataURL("image/png");
+  document.getElementById('hidden_data').value = dataURL;
+  var formData = new FormData(document.getElementById("form1"));
+  
+  var xhr = new XMLHttpRequest();
+  xhr.onload = function(){
+    if( xhr.status == 200){
+      if(xhr.responseText == "error"){
+        alert("Error");
+      }else{
+        alert('Succesfully uploaded');  
+        console.log(xhr.responseText);
+      }
+    }else{
+      alert(xhr.status)
+    }
+  }
+  
+  xhr.open('POST', 'canvas_load_save.php', true);
+  xhr.send(formData);
+}
+
+</script>
+</body>
+</html>
