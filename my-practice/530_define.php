@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>PHP Class</title>
@@ -46,8 +46,7 @@
 		$p2->name = "Alice";
 		$p2->smile();
 
-
-		echo "人生必經四階段 : ", Person::STEP, "<br>";
+		echo "人生必經四階段 : ", Person::STEP, "<br>"; //呼叫常數
 	?>    
 	
 </body>

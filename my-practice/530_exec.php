@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>exec</title>
 </head>
 <body>
 	<?php 
 
 	try{
-		$dns = "mysql:host=localhost;port=3306;dbname=dd101;charset=utf8";
+		$dns = "mysql:host=localhost;port=3306;dbname=dd101;charset=utf8";//連上伺服器
 		$user = "RouRouyo";
 		$password = "19820623";
 		$options = array(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);

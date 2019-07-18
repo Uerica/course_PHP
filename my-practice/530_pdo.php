@@ -9,9 +9,9 @@
 
 	try{
 
-		$dns = "mysql:host=localhost;port=3306;dbname=dd101;charset=utf8";
-		$user = "RouRouyo";
-		$password = "19820623";
+		$dns = "mysql:host=sql.uerica.com;port=3307;dbname=dd101g2;charset=utf8";
+		$user = "dd101g2";
+		$password = "dd101g2";
 		$pdo = new PDO($dns, $user, $password);
 		echo "連線成功";
 
